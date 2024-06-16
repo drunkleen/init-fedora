@@ -1,0 +1,7 @@
+# Created by Anakin
+
+export ZSH="$HOME/.oh-my-zsh"
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /home/skywalker/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
