@@ -1,0 +1,28 @@
+[/]
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'caa1b1d2-492d-4f5c-94d0-02a1dc159500']
+
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(37,22,33)'
+background-transparency-percent=14
+custom-command='zsh'
+font='Hack Nerd Font 18'
+foreground-color='rgb(208,207,204)'
+palette=['rgb(37,22,33)', 'rgb(206,145,120)', 'rgb(105,121,133)', 'rgb(104,136,148)', 'rgb(208,157,136)', 'rgb(217,175,148)', 'rgb(214,185,168)', 'rgb(218,208,206)', 'rgb(94,92,100)', 'rgb(189,135,113)', 'rgb(121,141,156)', 'rgb(120,156,169)', 'rgb(210,162,143)', 'rgb(205,169,145)', 'rgb(206,175,156)', 'rgb(219,208,206)']
+use-custom-command=true
+use-system-font=false
+use-theme-colors=false
+use-transparent-background=true
+visible-name='Anakin'
+
+[:caa1b1d2-492d-4f5c-94d0-02a1dc159500]
+background-color='rgb(37,22,33)'
+background-transparency-percent=14
+custom-command='zsh'
+font='Hack Nerd Font 18'
+foreground-color='rgb(208,207,204)'
+palette=['rgb(37,22,33)', 'rgb(206,145,120)', 'rgb(105,121,133)', 'rgb(104,136,148)', 'rgb(208,157,136)', 'rgb(217,175,148)', 'rgb(214,185,168)', 'rgb(218,208,206)', 'rgb(94,92,100)', 'rgb(189,135,113)', 'rgb(121,141,156)', 'rgb(120,156,169)', 'rgb(210,162,143)', 'rgb(205,169,145)', 'rgb(206,175,156)', 'rgb(219,208,206)']
+use-custom-command=true
+use-system-font=false
+use-theme-colors=false
+use-transparent-background=true
+visible-name='Anakin (Copy)'

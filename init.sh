@@ -21,6 +21,17 @@ read -p "Press Enter to continue..."
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
+echo "\n\n-----------------------------"
+echo "Setting Gnome Extentions and Terminal Profile..."
+echo "-----------------------------\n"
+read -p "Press Enter to continue..."
+sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf update -y
+sudo dnf install -y fedora-workstation-repositories
+sudo dnf install -y gnome-extensions-app
+sudo dnf install gnome-browser-connector
+gnome-shell-extension-tool -d background-logo@fedorahosted.org
+dconf load /org/gnome/terminal/legacy/profiles:/ < /home/$USER/Downloads/init-fedora/src/gnome-terminal-profiles.dconf
 
 echo "\n\n-----------------------------"
 echo "Setting Mouse Size..."
