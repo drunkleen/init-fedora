@@ -24,8 +24,9 @@ sudo dnf update -y; sudo dnf upgrade -y;
 sudo dnf -y install dnf-plugins-core
 
 print_head "Installing Packages..."
-sudo dnf install -y zsh vlc neovim unzip neofetch gnome-tweaks gnome-themes-extra btop git golang inkscape xorg-x11-apps wget
-sudo dnf erase fzfHttpie
+sudo dnf install -y zsh vlc neovim unzip neofetch gnome-tweaks gnome-themes-extra btop git golang inkscape xorg-x11-apps wget curl
+
+sudo dnf erase fzf
 
 print_head "Setting Gnome Theme..."
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
@@ -212,6 +213,8 @@ git clone https://github.com/drunkleen/starwars-grub.git $SRC_DIR/src/starwars-g
 chmod +x $SRC_DIR/src/starwars-grub/install.sh
 sudo $SRC_DIR/src/starwars-grub/install.sh -s 2k
 
+
+sl
 echo ""
 echo ""
 echo "System will reboot now."
