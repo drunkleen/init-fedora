@@ -24,7 +24,7 @@ sudo dnf update -y; sudo dnf upgrade -y;
 sudo dnf -y install dnf-plugins-core
 
 print_head "Installing Packages..."
-sudo dnf install -y zsh vlc neovim unzip neofetch gnome-tweaks gnome-themes-extra btop git golang inkscape xorg-x11-apps wget curl
+sudo dnf install -y zsh vlc neovim unzip neofetch gnome-tweaks gnome-themes-extra btop git golang inkscape xorg-x11-apps wget curl tmux
 
 sudo dnf erase fzf
 
@@ -184,9 +184,7 @@ if [ -d "/home/$USER/.config/nvim/" ]; then
     rm -rf "/home/$USER/.config/nvim/"
 fi
 
-sudo mkdir -p /home/$USER/.config/nvim/
-sudo cp -rf $SRC_DIR/src/nvim/* /home/$USER/.config/nvim/
-get_ownership "/home/$USER/.config/nvim/"
+git clone https://github.com/drunkleen/My-NeoVim-Config.git /home/$USER/.config/nvim
 
 sudo cp -f $SRC_DIR/src/neofetch/ascii.txt /home/$USER/.config/neofetch/ascii.txt
 sudo cp -f $SRC_DIR/src/neofetch/config.conf /home/$USER/.config/neofetch/config.conf
